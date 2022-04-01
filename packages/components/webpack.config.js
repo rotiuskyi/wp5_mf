@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const dependencies = require('./package.json').dependencies;
+const federationConf = require('./federation.config.json');
 
 module.exports = {
     mode: 'development',
@@ -29,10 +30,7 @@ module.exports = {
 
     plugins: [
         new webpack.container.ModuleFederationPlugin({
-            name: 'wb5_mf_components',
-            exposes: {
-                './Counter': './src/Counter.tsx',
-            },
+            ...federationConf,
             shared: {
                 react: dependencies.react,
             }

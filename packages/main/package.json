@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",
-    "fetch-types": "cd types && wget http://localhost:3001/src/Counter.d.ts"
+    "fetch-types": "curl http://localhost:3001/wb5_mf_components.d.ts -o ./types/wb5_mf_components.d.ts --create-dirs"
   },
   "author": "roman.otiuskyi@gmail.com",
   "license": "UNLICENSED",

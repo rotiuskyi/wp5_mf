@@ -1,0 +1,7 @@
+{
+  "name": "wb5_mf_components",
+  "exposes": {
+      "./Counter": "./src/Counter.tsx",
+      "./Hello": "./src/Hello.tsx"
+  }
+}
