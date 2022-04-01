@@ -5,14 +5,12 @@ const federationConf = require('./federation.config.json');
 module.exports = {
     mode: 'development',
 
-    entry: [
-        './src/Counter.tsx',
-    ],
+    entry: Object.values(federationConf.exposes),
 
     devtool: 'source-map',
 
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx', 'json']
+        extensions: ['.js', '.ts', '.tsx', '.json']
     },
 
     module: {
