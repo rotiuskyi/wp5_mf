@@ -2,22 +2,25 @@
 Example of Webpack5 Module Federation with React, TypeScript
 
 ## Getting Started
-- Open terminal at ./packages/components and run following commands:
+Open terminal at ./packages/components and run following commands:
 ```
-# Install dependencies
+# 1. Install dependencies
 $ yarn
 
-# Build and prepare federated modules
+# 2. Build and prepare federated modules
 $ yarn build
 
-# Serve federated modules via HTTP server
+# 3. Serve federated modules via HTTP server
 $ yarn serve
 ```
-- Open terminal at ./packages/main and run following commands:
+Open terminal at ./packages/main and run following commands:
 ```
-# Install dependencies
+# 4. Install dependencies
 $ yarn
 
-# Start development server
+# 5. Fetch federated types
+$ yarn fetch-types
+
+# 6. Start development server
 $ yarn start
 ```
